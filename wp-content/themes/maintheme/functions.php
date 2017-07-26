@@ -29,7 +29,7 @@ add_action( 'init', 'adding_menus' );
 //Action that call javascript file on themebase assets/js
 function _adding_scripts() {
   //JS file regist
-  wp_register_script('my_custom_script', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'),'1', true);
+  wp_register_script('my_custom_script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'),'1', true);
   //Js load
   wp_enqueue_script('my_custom_script');
   wp_enqueue_script('jquery');
