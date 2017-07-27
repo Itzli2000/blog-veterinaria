@@ -59,31 +59,31 @@ add_filter('protected_title_format', 'change_protected_title_prefix');
 add_action( 'init', 'blog_projects' );
 function blog_projects() {
   $labels = array(
-    'name'               => _x( 'Proyectos', 'blog' ),
-    'singular_name'      => _x( 'Proyecto', 'post type singular name', 'blog' ),
-    'menu_name'          => _x( 'Proyectos', 'admin menu', 'blog' ),
-    'name_admin_bar'     => _x( 'Proyectos', 'add new on admin bar', 'blog' ),
+    'name'               => _x( 'Productos', 'blog' ),
+    'singular_name'      => _x( 'Producto', 'post type singular name', 'blog' ),
+    'menu_name'          => _x( 'Productos', 'admin menu', 'blog' ),
+    'name_admin_bar'     => _x( 'Productos', 'add new on admin bar', 'blog' ),
     'add_new'            => _x( 'Agregar Nuevo', 'book', 'blog' ),
     'add_new_item'       => __( 'Agregar Nuevo Proyecto', 'blog' ),
     'new_item'           => __( 'Nuevo Proyecto', 'blog' ),
-    'edit_item'          => __( 'Editar Proyectos', 'blog' ),
-    'view_item'          => __( 'Ver Proyectos', 'blog' ),
-    'all_items'          => __( 'Todos los Proyectos', 'blog' ),
-    'search_items'       => __( 'Buscar Proyectos', 'blog' ),
-    'parent_item_colon'  => __( 'Parent Proyectos:', 'blog' ),
-    'not_found'          => __( 'No Projects found.', 'blog' ),
-    'not_found_in_trash' => __( 'No Projects found in Trash.', 'blog' )
+    'edit_item'          => __( 'Editar Productos', 'blog' ),
+    'view_item'          => __( 'Ver Productos', 'blog' ),
+    'all_items'          => __( 'Todos los Productos', 'blog' ),
+    'search_items'       => __( 'Buscar Productos', 'blog' ),
+    'parent_item_colon'  => __( 'Parent Products:', 'blog' ),
+    'not_found'          => __( 'No se encontraron productos.', 'blog' ),
+    'not_found_in_trash' => __( 'Sin productos en basura.', 'blog' )
   );
 
   $args = array(
     'labels'             => $labels,
-    'description'        => __( 'Description.', 'blog' ),
+    'description'        => __( 'Descripción.', 'blog' ),
     'public'             => true,
     'publicly_queryable' => true,
     'show_ui'            => true,
     'show_in_menu'       => true,
     'query_var'          => true,
-    'rewrite'            => array( 'slug' => 'proyectosblog' ),
+    'rewrite'            => array( 'slug' => 'productosblog' ),
     'capability_type'    => 'post',
     'has_archive'        => true,
     'hierarchical'       => false,
@@ -92,7 +92,7 @@ function blog_projects() {
     'taxonomies'          => array( 'category' ),
   );
 
-  register_post_type( 'proyectosblog', $args );
+  register_post_type( 'productosblog', $args );
 }
 
 //Widget activation

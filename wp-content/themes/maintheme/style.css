@@ -187,7 +187,11 @@ footer {
 /*Banner styles*/
 #bannerColor {
   width: 100%;
-  background: rgba(33,150,243,0.4);
+  background: rgba(33,150,243,0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 #banner {
   width: 100%;
@@ -223,11 +227,11 @@ footer {
   height: 70px;
   align-items: center;
   justify-content: center;
-  background: rgba(33,150,243,0.15);
+  background: rgba(33,150,243,0.25);
   z-index: 9;
 }
 #bannerMenu {
-  width: 90%;
+  width: 80%;
   height: 50px;
   margin: 0 auto;
 }
