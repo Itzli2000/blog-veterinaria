@@ -22,7 +22,7 @@
           <!-- Thumbnail-->
           <div class="thumbnail">
           <div class="date">
-          <div class="day">$80.00</div>
+          <div class="day"><?php the_field('precio'); ?></div>
         </div>
             <img src="<?php the_post_thumbnail(); ?>"/>
           </div>

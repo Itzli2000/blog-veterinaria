@@ -134,7 +134,6 @@ footer {
 #footinfo {
   text-align: center;
   padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 /*Menu behavior*/
 #mobileMenu ul {
@@ -197,7 +196,7 @@ footer {
 /*Banner styles*/
 #bannerColor {
   width: 100%;
-  background: rgba(33,150,243,0.25);
+  background: rgba(64,87,61,0.25);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -237,7 +236,7 @@ footer {
   height: 70px;
   align-items: center;
   justify-content: center;
-  background: rgba(33,150,243,0.05);
+  background: rgba(64,87,61,0.25);
   z-index: 9;
 }
 #bannerMenu {
@@ -586,8 +585,8 @@ form a:active,
   content: '\f061';
 }
 #sideWidget a:hover {
-  color: #0396FF;
-  background-color: rgba(250,215,161,1);
+  color: #FFFFFF;
+  background-color: rgba(64,87,61,1);
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
