@@ -10,10 +10,10 @@ add_action( 'after_setup_theme', 'theme_setup');
 //Adding stylesheets
 function _adding_stylesheet(){
   //Style register
-  // wp_register_style('ihover',get_template_directory_uri().'/assets/css/ihover.css',array(),'1.0 ');
+  wp_register_style('cards',get_template_directory_uri().'/assets/css/card.css',array(),'1.0 ');
   wp_register_style('style',get_template_directory_uri().'/style.css',array(),'1.0 ');
   //Style display
-  // wp_enqueue_style('ihover');
+  wp_enqueue_style('cards');
   wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts','_adding_stylesheet');
