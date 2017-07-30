@@ -21,6 +21,9 @@
         <div class="post-module">
           <!-- Thumbnail-->
           <div class="thumbnail">
+          <div class="date">
+          <div class="day">$80.00</div>
+        </div>
             <img src="<?php the_post_thumbnail(); ?>"/>
           </div>
           <!-- Post Content-->
