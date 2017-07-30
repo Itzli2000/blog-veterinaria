@@ -199,7 +199,7 @@ footer {
   position: relative;
   background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -675,6 +675,32 @@ form a:active,
 }
 #sideWidget .screen-reader-text {
   display: none;
+}
+/*Styles for images included on texts*/
+.alignleft {
+  display: inline;
+  float: left;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+}
+
+.aligncenter,
+.alignnone {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
 }
 
 /*Styles for posts page: publish by*/
