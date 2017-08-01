@@ -93,7 +93,7 @@ body {
   background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
   background-image: url(assets/images/bck3.jpg);
   background-repeat:no-repeat;
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -126,7 +126,7 @@ footer {
   background-color: #404040;
 }
 #spherelink li:hover {
-  background-color: #4531CD;
+  background-color: #558B2F;
 }
 #spherelink li a {
   text-decoration: none;
@@ -642,7 +642,84 @@ form a:active,
   max-width: 400px;
   height: auto;
 }
-
+.widget ul {
+  padding: 0;
+  width: 100%;
+}
+/*Styles for contact page*/
+p.direction,
+p.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto !important;
+}
+#addressContainer p:before{
+  font-family: 'FontAwesome';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  color: #006847;
+  font-size: 25px;
+}
+#addressContainer .direction::before{
+  content: '\f041';
+}
+#addressContainer .phone::before{
+  content: '\f095';
+}
+/*Styles for form inputs on contact*/
+h3.formTitle {
+    border-bottom: 4px solid #558B2F;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+div.wpcf7 {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form.wpcf7-form {
+    max-width: 450px;
+    width: 100%;
+}
+form.wpcf7-form p {
+  margin: 10px auto !important;
+}
+.wpcf7-form-control {
+  width: 100%;
+  max-width: 450px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #DCEDC8;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+  margin-top: 7px;
+}
+.wpcf7-form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px #558B2F;
+}
+.wpcf7-textarea {
+  height: 150px;
+  resize: none;
+}
+.wpcf7-submit {
+  width: 100px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.wpcf7-submit:hover {
+  background-color: #558B2F;
+  color: #FFFFFF;
+}
 /*Styles for posts page: publish by*/
 @media screen and (min-width: 360px){
   .author {
