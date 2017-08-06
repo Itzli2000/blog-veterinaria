@@ -28,7 +28,7 @@
           </div>
           <!-- Post Content-->
           <div class="post-content">
-            <div class="category"><?php the_category(); ?></div>
+            <div class="category"><?php The_field('categoria'); ?></div>
             <h1 class="title"><?php the_title(); ?></h1>
             <h2 class="sub_title truncate"><?php the_content(); ?></h2>
             <div class="card-description"><?php the_content(); ?></div>
