@@ -17,3 +17,16 @@ jQuery(document).ready(function(){
     $(this).toggleClass('hover');
   });
 });
+
+
+  // Slideshow 1
+  jQuery(function($) {
+    $("#slider1").responsiveSlides({
+        maxwidth: 500,
+        speed: 2000
+      });
+    $("#slider2").responsiveSlides({
+        maxwidth: 500,
+        speed: 2000
+      });
+});

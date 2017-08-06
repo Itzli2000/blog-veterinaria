@@ -11,9 +11,11 @@ add_action( 'after_setup_theme', 'theme_setup');
 function _adding_stylesheet(){
   //Style register
   wp_register_style('cards',get_template_directory_uri().'/assets/css/card.css',array(),'1.0 ');
+  wp_register_style('slide',get_template_directory_uri().'/assets/css/slide.css',array(),'1.0 ');
   wp_register_style('style',get_template_directory_uri().'/style.css',array(),'1.0 ');
   //Style display
   wp_enqueue_style('cards');
+  wp_enqueue_style('slide');
   wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts','_adding_stylesheet');
@@ -29,10 +31,14 @@ add_action( 'init', 'adding_menus' );
 //Action that call javascript file on themebase assets/js
 function _adding_scripts() {
   //JS file regist
+  wp_register_script('my_custom_slide', get_template_directory_uri() . '/assets/js/slide.js');
+  wp_register_script('my_custom_slidemin', get_template_directory_uri() . '/assets/js/slide.min.js');
   wp_register_script('my_custom_script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'),'1', true);
   //Js load
-  wp_enqueue_script('my_custom_script');
   wp_enqueue_script('jquery');
+  wp_enqueue_script('my_custom_slidemin');
+  wp_enqueue_script('my_custom_slide');
+  wp_enqueue_script('my_custom_script');
 }
 add_action( 'wp_enqueue_scripts', '_adding_scripts',100 ); 
 
