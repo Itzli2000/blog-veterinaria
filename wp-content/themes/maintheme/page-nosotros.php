@@ -24,7 +24,7 @@
       </ul>
       <div class="innerContainer">
         <div class="innerContainer">
-          <h3>Misión</h3>
+        <h3>Visión</h3>
           <p><?php the_field('vision'); ?></p>
         </div>
       </div>
