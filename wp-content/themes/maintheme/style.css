@@ -22,7 +22,7 @@ Text Domain: Derecho Anahuac
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #ABDCFF;
+  background: #558B2F;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -90,7 +90,7 @@ a:hover {
   color: #fff;
 }
 body {
-  background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
+  background-image: linear-gradient( 135deg, #558B2F 0%, #DCEDC8 100%);
   background-image: url(assets/images/bck3.jpg);
   background-repeat:no-repeat;
   background-position: center center;
@@ -143,7 +143,7 @@ footer {
 #mobileMenu {
   width: 250px;
   height: 246px;
-  background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
+  background-image: linear-gradient( 135deg, #558B2F 0%, #DCEDC8 100%);
   position: absolute;
   right: -30px;
   transition: 1s;
@@ -170,7 +170,7 @@ footer {
   transition: 1s;
 }
 #mobileMenu .links li:hover {
-  background-color: #0396FF;
+  background-color: #558B2F;
 }
 #mobileMenu a {
   color: #ffffff;
@@ -206,7 +206,7 @@ footer {
   width: 100%;
   height: 300px;
   position: relative;
-  background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
+  background-image: linear-gradient( 135deg, #558B2F 0%, #DCEDC8 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -351,7 +351,7 @@ div.posts > * {
 }
 .author span {
   font-style: italic;
-  color: #0396FF;
+  color: #4E7F2B;
   margin-left: 5px;
 }
 .date time {
@@ -361,7 +361,7 @@ div.posts > * {
   height: 40px;
   display: inline-block;
   margin-right: 5px;
-  background-color: #0396FF;
+  background-color: #558B2F;
 }
 .author span.month, span.day {
   display: block;
@@ -376,7 +376,7 @@ span.post_by {
 }
 .post_button {
   width: 200px;
-  background-color: #0396FF;
+  background-color: #558B2F;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
@@ -411,7 +411,7 @@ span.post_by {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #0396FF;
+  background-color: #558B2F;
   margin-top: 20px;
 }
 .ih-item img {
@@ -451,6 +451,15 @@ form a:active,
 #mainComment h3 {
   font-size: 25px;
 }
+#commentform textarea,
+#commentform input {
+  background-color: #DCEDC8;
+  border: 1px solid #558B2F;
+}
+#commentform textarea:focus,
+#commentform input:focus {
+  outline: #FFF 1px solid;
+}
 #commentform label {
   display: block;
   font-weight: bold;
@@ -466,7 +475,7 @@ form a:active,
   display: none;
 }
 #mainComment .submit {
-  background-color: #0396FF;
+  background-color: #558B2F;
   font-weight: bold;
   color: #FFF;
   padding: 8px 0px;
@@ -477,7 +486,7 @@ form a:active,
 }
 #cancel-comment-reply-link {
   display: block;
-  color: #0396FF;
+  color: #558B2F;
   font-weight: normal;
 }
 .logged-in-as {
@@ -485,7 +494,7 @@ form a:active,
 }
 /*Styles for comments showed*/
 .listComment .comment {
-  background-image: linear-gradient( 135deg, rgba(171,220,255,0.5) 0%, rgba(3,150,255,0.5) 100%);
+  background-image: linear-gradient( 135deg, rgba(85,139,47,0.5) 0%, rgba(220,237,200,0.5) 100%);
   margin: 20px 0;
   padding: 20px;
   border-radius: 20px;
@@ -511,7 +520,7 @@ form a:active,
   width: 130px;
   font-size: 17px;
   font-weight: bold;
-  background-color: #0396FF;
+  background-color: #558B2F;
   padding: 5px 3px;
   text-align: center;
   border-radius: 10px;
@@ -522,7 +531,7 @@ form a:active,
 /*Pagination styles*/
 .pagination {
   margin-top: 20px;
-  background-color: #0396FF;
+  background-color: #558B2F;
   padding: 20px;
   display: inline-block;
   border-radius: 20px;
@@ -579,10 +588,11 @@ form a:active,
 }
 #sideWidget a:hover {
   color: #FFFFFF;
-  background-color: rgba(64,87,61,1);
+  background-color: #558B2F;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
+  padding-right: 10px;
 }
 #sideWidget form.searchform {
   position: relative;
@@ -593,7 +603,7 @@ form a:active,
   right: 0;
   width: 30px;
   height: 24px;
-  background-color: #0396FF;
+  background-color: #558B2F;
   text-indent: -9999px;
   background-image: url(assets/images/search.png);
   background-repeat: no-repeat;
@@ -728,6 +738,12 @@ form.wpcf7-form p {
   background-color: #558B2F;
   color: #FFFFFF;
 }
+/*Sidebar styles*/
+  input#s {
+    width: 90%;
+  }
+
+
 /*Styles for posts page: publish by*/
 @media screen and (min-width: 360px){
   .author {
