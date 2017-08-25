@@ -741,7 +741,6 @@ form.wpcf7-form p {
 input#s {
   width: 90%;
 }
-
 /*Attention image styles*/
 img.attention {
   width: 100%;
@@ -927,6 +926,11 @@ img.attention {
     height: auto;
     position: relative;
     bottom: 20%;
+  }
+  /*Attention image styles*/
+  img.attention {
+    width: 70%;
+    height: auto;
   }
 }
 
