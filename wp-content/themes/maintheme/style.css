@@ -259,7 +259,6 @@ footer {
   text-align: center;
 }
 #paginationContainer {
-  width: 70%;
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
@@ -767,6 +766,9 @@ form.wpcf7-form p {
   #mainContainer {
     width: 70%;
   }
+  #paginationContainer {
+    width: 70%;
+  }
   #banner {
     height: 400px;
     text-shadow: 3px 3px #000;
@@ -828,7 +830,7 @@ form.wpcf7-form p {
   }
   /*Sidebar styles*/
   input#s {
-    width: 85%;
+    width: 90%;
   }
 }
 
