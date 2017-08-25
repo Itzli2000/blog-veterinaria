@@ -738,9 +738,15 @@ form.wpcf7-form p {
   color: #FFFFFF;
 }
 /*Sidebar styles*/
-  input#s {
-    width: 90%;
-  }
+input#s {
+  width: 90%;
+}
+
+/*Attention image styles*/
+img.attention {
+  width: 100%;
+  height: auto;
+}
 
 
 /*Styles for posts page: publish by*/
