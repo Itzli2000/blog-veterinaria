@@ -113,4 +113,17 @@ function my_widgets (){
     ) );
 }
 add_action( 'widgets_init', 'my_widgets');
+
+//Search only posts on blog page
+function my_home_category( $query ) {
+    if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+  }
+}
+add_action( 'pre_get_posts', 'my_home_category' );
+
+
+
 ?>

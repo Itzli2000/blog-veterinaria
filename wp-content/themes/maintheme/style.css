@@ -99,7 +99,6 @@ body {
 }
 footer {
   padding-top: 20px;
-  width: 80%;
   background-color: rgba(255,255,255,0.9);
   margin: 0 auto;
 }
@@ -248,7 +247,6 @@ footer {
 }
 /*Container styles*/
 #mainContainer {
-  width: 70%;
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
@@ -335,11 +333,13 @@ div.posts > * {
 .author {
   display: inline;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding-left: inherit;
 }
 .author > *{
   display: inline-block;
+  margin-top: 10px;
 }
 .single_author {
   margin-top: 30px;
@@ -426,7 +426,6 @@ span.post_by {
   width: 100%;
   height: auto;
   left: 0;
-  bottom: -50%;
 }
 /*Comment Form in posts page styles*/
 .postsComment  a,
@@ -740,6 +739,13 @@ form.wpcf7-form p {
 
 /*Tablet screen styles*/
 @media screen and (min-width: 768px) {
+  footer {
+    width: 80%;
+  }
+  /*Container styles*/
+  #mainContainer {
+    width: 70%;
+  }
   #banner {
     height: 400px;
     text-shadow: 3px 3px #000;
@@ -789,8 +795,15 @@ form.wpcf7-form p {
     height: 200px;
   }
   /*Single Posts styles*/
+  .author > *{
+    display: inline-block;
+    margin-top: 0;
+  }
   .single_post_image {
     height: 200px;
+  }
+  .single_post_image img {
+    bottom: -50%;
   }
   /*Sidebar styles*/
   input#s {
