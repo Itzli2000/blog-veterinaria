@@ -886,4 +886,29 @@ form.wpcf7-form p {
   .single_post_image {
     height: 300px;
   }
+  /*Cards styles*/
+  #cardContainer {
+    width: 400px;
+  }
+  .post-module {
+    width: 400px;
+  }
+  .post-module .thumbnail img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 20%;
+  }
+}
+
+
+
+@media screen and (min-width: 1300px) {
+  /*Cards styles*/
+  #cardContainer {
+    width: 450px;
+  }
+  .post-module {
+    width: 450px;
+  }
 }
