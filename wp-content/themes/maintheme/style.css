@@ -647,6 +647,7 @@ form a:active,
 .innerContainer,
 .rslides {
   display: block;
+  max-height: 300px;
   max-width: 500px;
 }
 /*Styles for contact page*/
