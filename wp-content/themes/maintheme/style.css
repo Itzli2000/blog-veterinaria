@@ -145,11 +145,11 @@ footer {
   height: 246px;
   background-image: linear-gradient( 135deg, #0396FF 0%, #ABDCFF 100%);
   position: absolute;
-  right: -15px;
+  right: -30px;
   transition: 1s;
 }
 #mobileMenu.active {
-  right: -300px;
+  right: -500px;
   transition: 1s;
 }
 #mobileMenu .links li {
@@ -230,7 +230,12 @@ footer {
 #bannerMenu {
   width: 80%;
   height: 50px;
-  margin: 0 auto;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
 }
 #bannerMenu .logoLink {
   text-decoration: none;
@@ -315,7 +320,7 @@ footer {
 /*Container Post styles*/
 div#eachPost {
   margin-bottom: 30px;
-   margin-top: 10px; 
+  margin-top: 10px; 
 }
 div.posts {
   display: flex;
@@ -410,8 +415,8 @@ span.post_by {
   margin-top: 20px;
 }
 .ih-item img {
-    width: 150%;
-    height: 150%;
+  width: 150%;
+  height: 150%;
 }
 /*Single Posts styles*/
 .single_post_image {
@@ -673,23 +678,23 @@ p.phone {
 }
 /*Styles for form inputs on contact*/
 h3.formTitle {
-    border-bottom: 4px solid #558B2F;
-    padding-bottom: 5px;
-    margin: 10px 0;
-    margin-top: 30px;
+  border-bottom: 4px solid #558B2F;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  margin-top: 30px;
 }
 div.wpcf7 {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 form.wpcf7-form {
-    max-width: 450px;
-    width: 100%;
+  max-width: 450px;
+  width: 100%;
 }
 form.wpcf7-form p {
   margin: 10px auto !important;
