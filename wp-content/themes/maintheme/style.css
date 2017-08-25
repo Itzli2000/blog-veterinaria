@@ -685,6 +685,10 @@ p.phone {
 #addressContainer .phone::before{
   content: '\f095';
 }
+.locationpage {
+  font-style: italic;
+  font-size: 20px;
+}
 /*Styles for form inputs on contact*/
 h3.formTitle {
   border-bottom: 4px solid #558B2F;

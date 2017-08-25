@@ -5,9 +5,9 @@
     <?php the_content(); ?>
 
     <h3>Te esperamos en nuestros siguientes horarios:</h3>
-    <img class="attention" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/horario.png" alt="imagen con horarios de atención">
+    <img class="attention" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/horario.svg" alt="imagen con horarios de atención">
     <h3>Encuentranos en:</h3>
-    <div id="addressContainer">
+    <div id="addressContainer" class="locationpage">
       <p class="direction"><?php the_field('direccion'); ?></p>
       <p class="phone"><?php the_field('telefono'); ?></p>
     </div>
