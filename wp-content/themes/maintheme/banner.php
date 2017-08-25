@@ -6,10 +6,6 @@ Template Name: banner
 <header id="banner" class="home" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>')">
   <div id="bannerColor">
     <h1><?php the_title(); ?></h1>
-    <div class="separator">
-      <span></span>
-    </div>
-    <h4><?php the_subtitle(); ?></h4>
   </div>
   <div id="menuContainer">
     <div id="bannerMenu">

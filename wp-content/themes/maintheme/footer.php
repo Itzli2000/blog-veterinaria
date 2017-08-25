@@ -15,6 +15,5 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/7fed5c7b4f.js"></script>
 </body>
 </html>

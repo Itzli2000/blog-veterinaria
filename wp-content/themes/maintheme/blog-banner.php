@@ -11,10 +11,6 @@ $image = wp_get_attachment_image_src( $image, 'full');
 <header id="banner" class="home" style="background-image: url('<?php echo $image[0];?>')">
   <div id="bannerColor">
     <h1><?php echo get_the_title($blog_page); ?></h1>
-    <div class="separator">
-      <span></span>
-    </div>
-    <h4><?php get_the_subtitle($blog_page); ?></h4>
   </div>
   <div id="menuContainer">
     <div id="bannerMenu">
