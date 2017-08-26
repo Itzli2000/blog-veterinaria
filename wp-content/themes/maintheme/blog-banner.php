@@ -38,7 +38,7 @@ $image = wp_get_attachment_image_src( $image, 'full');
           ?>
         </ul>
       </nav>
-      <nav id="largeMenu"> <!-- Mobile menu -->
+      <nav id="largeMenu">
         <?php 
         $args = array(
           'theme_location' => 'header-menu',
